@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background: #8ac6d1;
+    padding: 20px;
+}
+
+header .logo {
+    width: 150px;
+}
+
+nav a {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    padding: 5px;
+    color: black;
+    border-radius: 15px;
+    background: #ffe3ed;
+}
+
+main {
+    padding: 20px 0;
+}
+.myGoalFlex{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.myGoal {
+    overflow: hidden;
+    min-width: 300px;
+    max-width: 300px;
+    background: #beebe9;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+.myGoal h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.myGoal .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.myGoal .row label {
+    font-size: 1.3em;
+}
+
+.myGoal .row input {
+    background: #ffffff;
+    font-size: 1.2em;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px 0;
+}

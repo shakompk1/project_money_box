@@ -1,0 +1,134 @@
+.closeAddBlock {
+    position: fixed;
+    top: 50%;
+    transform: translate(50%, -50%);
+    right: 50%;
+    animation-name: hide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+@keyframes hide {
+    from {
+        width: 410px;
+        right: 50%;
+    }
+    to {
+        width: 0;
+        right: 0;
+    }
+}
+
+.openAddBlock {
+    animation-name: show;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    from {
+        width: 0;
+        right: 0;
+    }
+    to {
+        width: 410px;
+        right: 50%;
+    }
+}
+
+.showBlock {
+    width: 65px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: -70px;
+    transform: translate(0, -50%);
+    top: 50%;
+}
+
+.formHide {
+    overflow: hidden;
+    animation-name: formHide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes formHide {
+    from {
+        width: 410px;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.formShow {
+    overflow: hidden;
+    animation-name: formShow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes formShow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 410px;
+    }
+}
+
+.loadingClose {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+    animation-name: loadingClose;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loadingClose {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.loadingOpen {
+    animation-name: loadingOpen;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loadingOpen {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.myGoal {
+    animation-name: myGoalAdd;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myGoalAdd {
+    from {
+        padding: 0;
+        height: 0;
+    }
+    to {
+        padding: 20px;
+        height: 400px;
+    }
+}
